@@ -1,32 +1,32 @@
-# Skript-Name
+# Server connection via linux terminal | SSH and SFTP
 
-Dieses Skript stellt eine Verbindung zu einem Wireguard-Netzwerk her und ermöglicht eine SFTP-Verbindung zu einem entfernten Server.
+This script establishes a connection to a Wireguard network and enables an SFTP connection to a remote server.
 
-## Voraussetzungen
+## Prerequisites
 
-- Wireguard muss auf dem System installiert sein.
-- Die SSH-Schlüssel müssen konfiguriert sein, um eine Verbindung zum Zielserver herzustellen.
+- Wireguard must be installed on the system.
+- SSH keys must be configured to establish a connection to the target server.
 
-## Verwendung
+## Usage
 
-1. Öffnen Sie das Skript (`script.sh`) in einem Texteditor.
-2. Passen Sie die folgenden Werte an:
+1. Open the script (`script.sh`) in a text editor.
+2. Customize the following values:
 
-   - `SERVER_USER`: Geben Sie den Benutzernamen des Servers ein.
-   - `SERVER_IP`: Geben Sie die IP-Adresse des Servers ein.
-   - `WIREGUARD_CONFIG_NAME`: Geben Sie den Namen der Wireguard-Konfiguration ein.
+   - `SERVER_USER`: Enter the server's username.
+   - `SERVER_IP`: Enter the server's IP address.
+   - `WIREGUARD_CONFIG_NAME`: Enter the name of the Wireguard configuration.
 
-3. Speichern Sie das Skript nach der Anpassung.
+3. Save the script after making the customization.
 
-4. Führen Sie das Skript aus, indem Sie den Befehl `./script.sh` in einem Terminal ausführen.
+4. Run the script by executing the command `./script.sh` in a terminal.
 
-Das Skript stellt automatisch eine Verbindung zum Wireguard-Netzwerk her, verwendet die angegebenen Werte für den Server und die Wireguard-Konfiguration und richtet eine SFTP-Verbindung zum entfernten Server ein.
+The script will automatically establish a connection to the Wireguard network, using the provided values for the server and Wireguard configuration, and set up an SFTP connection to the remote server.
 
-## Bereinigung
+## Cleanup
 
-Das Skript enthält eine Bereinigungsfunktion, die automatisch aufgerufen wird, wenn das Skript beendet wird. Die Bereinigungsfunktion trennt die SFTP-Verbindung und entfernt das gemountete Verzeichnis.
+The script includes a cleanup function that is automatically called when the script terminates. The cleanup function disconnects the SFTP connection and removes the mounted directory.
 
-## Hinweise
+## Notes
 
-- Stellen Sie sicher, dass die Wireguard-Konfiguration richtig eingerichtet ist, um eine erfolgreiche Verbindung zum Netzwerk herzustellen.
-- Überprüfen Sie, ob die angegebene Server-IP-Adresse und der Benutzername korrekt sind.
+- Ensure that the Wireguard configuration is properly set up to establish a successful connection to the network.
+- Verify that the specified server IP address and username are correct.
