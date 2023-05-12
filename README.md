@@ -4,7 +4,7 @@ This script establishes a connection to a Wireguard network and enables an SFTP 
 
 ## Prerequisites
 
-- Wireguard must be installed on the system.
+- Wireguard and sshfs must be installed on the system.
 - SSH keys must be configured to establish a connection to the target server.
 
 ## Usage
